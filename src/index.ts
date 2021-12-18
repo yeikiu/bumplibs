@@ -7,7 +7,7 @@ import { spawn } from 'child_process'
 const pkgFilePath = resolve(process.cwd(), 'package.json')
 const backupFilePath = resolve(process.cwd(), 'package.json.backup')
 
-const bumpLibs = async (dependencies: { [k: string]: string }, npmFlags = '') => new Promise((resolve) => {
+const bumpLibs = (dependencies: { [k: string]: string }, npmFlags = '') => new Promise((resolve) => {
     const dependenciesList = Object.keys(dependencies)
     const uninstall = spawn('npm', ['uninstall', ...dependenciesList])
     uninstall.stdout.on('data', (data) => {
