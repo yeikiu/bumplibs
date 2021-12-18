@@ -10,9 +10,6 @@
     "watch": "nodemon",
     "build": "rimraf dist && tsc -p ."
   },
-  "dependencies": {
-    "debug": "^3.2.7"
-  },
   "devDependencies": {
     "nodemon": "^2.0.15",
     "rimraf": "^3.0.2",
