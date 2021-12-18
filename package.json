@@ -1,0 +1,22 @@
+{
+  "name": "bumplibs",
+  "version": "1.0.0",
+  "description": "Updates all dependencies to their latest versions (including major bumps)",
+  "bin": {
+    "bumplibs": "dist/index.js"
+  },
+  "scripts": {
+    "lint": "tsc -p . --noEmit && eslint \"src/**/*.{js,ts}\" --quiet --fix",
+    "watch": "nodemon",
+    "build": "rimraf dist && tsc -p ."
+  },
+  "dependencies": {
+    "debug": "^3.2.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
+}

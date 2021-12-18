@@ -1,0 +1,12 @@
+{
+  "include": [
+    "src/**/*.ts"
+  ],
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": [
+      "ESNext",
+    ],
+    "outDir": "dist",
+  }
+}
